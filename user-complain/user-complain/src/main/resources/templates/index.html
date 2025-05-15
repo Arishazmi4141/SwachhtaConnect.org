@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swachh Bharat</title>
+  <link rel="shortcut icon"
+        href="Image.Index/Ashoka.png"
+        type="image/x-icon">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" th:href="@{/index.css}"/>
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="class1">
+    <div class="class2">
+      <img src="Image.Index/Swachh_logo-removebg-preview.png" alt="Error">
+    </div>
+    <div class="tittle">
+      <h1><a href="index.html">SwachhtaConnect.org</a></h1>
+    </div>
+    <div class="bars">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a th:href="@{/Scheme.html}">Scheme</a></li>
+        <li><a th:href="@{/register.html}">Complain</a></li>
+        <li><a th:href="user.html">Users</a></li>
+        <li><a href="#contact1">Contact</a></li>
+        <li><a href="About-us.html">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- carousel -->
+<div class="carousel">
+  <!-- list item -->
+  <div class="list">
+    <div class="item">
+      <img src="Image.Index/1725985811396 (1) (1).jpg" alt="">
+      <div class=" content">
+        <div class="author">गन्दगी से बढ़े बीमारी,</div>
+        <div class="title"> स्वच्छता की करो तैयारी।</div>
+        <!-- <div class="topic"></div> -->
+        <div class="des">
+          The campaign aims to achieve the vision of a 'Clean India' by 2nd October 2019
+        </div>
+        <div class="buttons">
+          <button>SEE MORE</button>
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="Image.Index/1725990038192.jpg">
+      <div class="content">
+        <div class="author">देश तभी साफ होगा,</div>
+        <div class="title">जब स्वच्छता में सबका हाथ होगा।</div>
+        <!-- <div class="topic">ANIMAL</div> -->
+        <div class="des">
+          eliminating open defecation, promoting the construction of toilets, creating awareness about
+          sanitation and hygiene, and ensuring the safe disposal of waste
+        </div>
+        <div class="buttons">
+          <button>SEE MORE</button>
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="Image.Index/1725991653751 (3).jpg">
+      <div class="content">
+        <div class="author">हर नागरिक का हो ये सपना,</div>
+        <div class="title">स्वच्छ हो सम्पूर्ण भारत अपना।</div>
+        <!-- <div class="topic">ANIMAL</div> -->
+        <div class="des">
+          to improve rural sanitation by adopting solid and liquid waste management operations and
+          ensuring that villages are open defecation free (ODF).
+        </div>
+        <div class="buttons">
+          <button>SEE MORE</button>
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="Image.Index/1725990414254 (3).jpg">
+      <div class="content">
+        <div class="author">करें हम ऐसा काम,</div>
+        <div class="title"> बनी रहेगी देश की शान।</div>
+        <!-- <div class="topic">ANIMAL</div> -->
+        <div class="des">
+          Students should have a habit of using dustbin in schools as well as at the houses and should
+          also ask their parents to use it
+        </div>
+        <div class="buttons">
+          <button>SEE MORE</button>
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- list thumnail -->
+  <div class="thumbnail">
+    <div class="item">
+      <img src="Image.Index/1725990414254.jpg">
+      <div class="content">
+        <div class="title">
+          गन्दगी से बढ़े बीमारी,
+        </div>
+        <div class="description">
+          स्वच्छता की करो तैयारी।
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Image.Index/1725985811396.jpg">
+      <div class="content">
+        <div class="title">
+          देश तभी साफ होगा
+        </div>
+        <div class="description">
+          जब स्वच्छता में सबका हाथ होगा।
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Image.Index/1725990038192.jpg">
+      <div class="content">
+        <div class="title">
+          हर नागरिक का हो ये सपना
+        </div>
+        <div class="description">
+          स्वच्छ हो सम्पूर्ण भारत अपना।
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="Image.Index/1725991653751.jpg">
+      <div class="content">
+        <div class="title">
+          करें हम ऐसा काम
+        </div>
+        <div class="description">
+          बनी रहेगी देश की शान।
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- next prev -->
+  <div class="arrows">
+    <button id="prev">
+      << /button>
+      <button id="next">></button>
+  </div>
+  <!-- time running -->
+  <div class="time"></div>
+</div>
+
+<div class="counters">
+  <div>
+    <div class="counter">
+      <h1><span data-count="3420">0</span>+</h1>
+      <h3>Volunteer</h3>
+    </div>
+    <div class="counter">
+      <h1><span data-count="4353">0</span>+</h1>
+      <h3>Cities</h3>
+    </div>
+    <div class="counter">
+      <h1><span data-count="97">0</span>%</h1>
+      <h3>Door To Door Waste Collectiion</h3>
+    </div>
+    <div class="counter">
+      <h1><span data-count="99">0</span>%</h1>
+      <h3>Satisfied Clients</h3>
+    </div>
+  </div>
+</div>
+
+<div class="container1">
+  <section class="main-content">
+    <h1>Swachh Bharat Abhiyan</h1>
+    <p> “A clean India would be the best tribute India could pay to Mahatma Gandhi on his 150 birth
+      anniversary in 2019,” said Shri Narendra Modi as he launched the Swachh Bharat Mission at Rajpath in
+      New Delhi. On 2nd October 2014, Swachh Bharat Mission was launched t hroughout length and breadth of
+      the country as a national movement. The campaign aims to achieve the vision of a ‘Clean India’ by
+      2nd October 2019.
+
+      VIDEO: PM’s speech at the launch of the Swachh Bharat Abhiyaan <a
+              href="https://www.youtube.com/watch?v=HmtxA_iXvbY">https://www.youtube.com/watch?v=HmtxA_iXvbY</a>
+
+      The Swachh Bharat Abhiyan is the most significant cleanliness campaign by the Government of India.
+      Shri Narendra Modi led a cleanliness pledge at India Gate, which about thirty lakh government
+      employees across the country joined.</p>
+    <div class="image-section">
+      <img src="Image.Index/Screenshot_20240813-164144.png" alt="Swachh Bharat Mission">
+    </div>
+
+    <p> While leading the mass movement for cleanliness, the Prime Minister exhorted people to fulfil
+      Mahatma Gandhi’s dream of a clean and hygienic India. Shri Narendra Modi himself initiated
+      the cleanliness drive at Mandir Marg Police Station. Picking up the broom to clean the dirt,
+      making Swachh Bharat Abhiyan a mass movement across the nation, the Prime Minister said
+      people should neither litter, nor let others litter. He gave the mantra of ‘Na gandagi
+      karenge, Na karne denge.’ Shri Narendra Modi also invited nine people to join the
+      cleanliness drive and requested each of them to draw nine more into the initiative.</p>
+    <div class="image-section">
+      <img src="Image.Index/source-zeebiz.jpg" alt="Swachh Bharat Mission">
+    </div>
+
+    <p>By inviting people to participate in the drive, the Swachhta Abhiyan has turned into a
+      National Movement. A sense of responsibility has been evoked among the people through the
+      Clean India Movement. With citizens now becoming active participants in cleanliness
+      activities across the nation, the dream of a ‘Clean India’ once seen by Mahatma Gandhi has
+      begun to get a shape.
+      People from different sections of the society have come forward and joined this mass movement
+      of cleanliness. From government officials to jawans, bollywood actors to the sportspersons,
+      industrialists to spiritual leaders, all have lined up for the noble work.</p>
+    <div class="image-section">
+      <img src="Image.Index/gettyimages-524106594-612x612.jpg" alt="Swachh Bharat Mission">
+    </div>
+
+    <p> Millions of people across the country have been day after day joining the cleanliness initiatives of the
+      government departments, NGOs and local community centres to make India clean. Organising
+      frequent cleanliness campaigns to spreading awareness about hygiene through plays and music
+      is also being widely carried out across the nation.
+
+      VIDEO: PM Modi flags off ‘Swachh Bharat’ mission walkathon from Rajpath <a
+              href="https://www.youtube.com/watch?v=snun5Q6ngV8">https://www.youtube.com/watch?v=snun5Q6ngV8</a>
+
+      Prime Minister himself has praised the efforts by people and various departments and
+      organisations for taking part in the Swachh Bharat Mission and contributing toward a cleaner
+      India.</p>
+    <div class="image-section">
+      <img src="Image.Index/gettyimages-509157608-612x612.jpg" alt="Swachh Bharat Mission">
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <div class="video1">
+      <video autoplay loop muted src="Image.Index/WhatsApp Video 2024-08-14 at 12.02.47 PM.mp4"></video>
+    </div>
+
+    <div class="recent-news">
+      <h3>Related News</h3>
+      <div class="container2">
+        <div class="img-container">
+          <img src="Image.Index/gettyimages-509157608-612x612.jpg" width="100%" alt="">
+          <img src="Image.Index/gettyimages-509157626-612x612.jpg" width="100%" alt="">
+          <img src="Image.Index/gettyimages-524106594-612x612.jpg" width="100%" alt="">
+          <img src="Image.Index/gov-track5.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="recent-news">
+      <h3>Recent News</h3>
+      <ul>
+        <li><a href="https://www.pmindia.gov.in/en/major_initiatives/swachh-bharat-abhiyan/">https://www.pmindia.gov.in/en/major_initiatives/swachh...</a></li>
+        <li><a href="https://swachhbharatmission.ddws.gov.in/about_sbm">https://swachhbharatmission.ddws.gov.in/about_sbm...</a></li>
+        <li><a href="https://sbmurban.org/">https://sbmurban.org...</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Swachh_Bharat_Mission">https://en.wikipedia.org/wiki/Swachh_Bharat_Mission...</a></li>
+      </ul>
+    </div>
+
+    <div class="recent-news">
+      <!-- <h3>Related News</h3> -->
+      <div class="container22">
+        <div class="img-container22">
+          <img src="Image.Index/172599060966167 - Copy.jpg" width="100%" alt="">
+          <img src="Image.Index/172599013744667.jpg" width="100%" alt="">
+          <img src="Image.Index/1725990322062.jpg" width="100%" alt="">
+          <img src="Image.Index/1725990733674.jpg" alt="">
+          <img src="Image.Index/1725989765483.jpg" width="100%" alt="">
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="slide-container swiper">
+  <div class="slide-content">
+    <div class="card-wrapper swiper-wrapper">
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="Image.Index/PMJDY_Logo.png" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Pradhan Mantri Jan-Dhan Yojana (PMJDY)</h2>
+          <p class="description">Pradhan Mantri Jan-Dhan Yojana (PMJDY) is a financial inclusion initiative launched by the Indian government to provide affordable access to banking services, including savings accounts, credit, insurance, and pensions.</p>
+
+          <button class="button"><a href="https://pmjdy.gov.in/scheme">View More</a></button>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="Image.Index/Feature-pmjay.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Pradhan Mantri Jan Arogya Yojana (PM-JAY)</h2>
+          <p class="description">Pradhan Mantri Jan Arogya Yojana (PM-JAY) is a government health insurance scheme aimed at providing free healthcare coverage to economically vulnerable families, ensuring access to quality medical services across India.</p>
+
+          <button class="button"><a href="https://web.umang.gov.in/landing/department/pradhan-mantri-jan-arogya-yojana.html">View More</a></button>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="Image.Index/pardhanmantri_img.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Pradhan Mantri Garib Kalyan Anna Yojana</h2>
+          <p class="description">Pradhan Mantri Garib Kalyan Anna Yojana is a government initiative that provides free food grains to low-income families in India, ensuring food security for vulnerable populations during times of crisis like the COVID-19 pandemic.</p>
+
+          <button class="button"><a href="https://www.indiabudget.gov.in/pmgky/">View More</a></button>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="Image.Index/unnamed.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">PM Kisan Samman Nidhi</h2>
+          <p class="description">PM Kisan Samman Nidhi is a government scheme that provides financial assistance to small and marginal farmers in India. Eligible farmers receive direct income support of ₹6,000 annually, in three installments.</p>
+
+          <button class="button"><a href="https://pmkisan.gov.in/">View More</a></button>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="Image.Index/1_a2fYT7O6ryDkICkm1NUPrg.webp" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">Pulse Polio</h2>
+          <p class="description">Pulse Polio is a government-led immunization campaign in India aimed at eradicating polio by providing free oral polio vaccines to children under the age of five, ensuring mass protection and prevention.</p>
+
+          <button class="button"><a href="https://hfw.delhi.gov.in/doit-content/pulse-polio-immunization-program">View More</a></button>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="image-content">
+          <span class="overlay"></span>
+
+          <div class="card-image">
+            <img src="Image.Index/4c144fd0aef196bace41dac9c001d8a4.jpg" alt="" class="card-img">
+          </div>
+        </div>
+
+        <div class="card-content">
+          <h2 class="name">
+            Beti Bachao Beti Padhao (बेटी बचाओ बेटी पढाओ)</h2>
+          <p class="description">Beti Bachao Beti Padhao is a government initiative aimed at promoting gender equality by preventing female foeticide, ensuring the survival, protection, and education of the girl child, and empowering women across India.</p>
+
+          <button class="button"><a href="https://www.pmindia.gov.in/hi/government_tr_rec/%E0%A4%AC%E0%A5%87%E0%A4%9F%E0%A5%80-%E0%A4%AC%E0%A4%9A%E0%A4%BE%E0%A4%93-%E0%A4%AC%E0%A5%87%E0%A4%9F%E0%A5%80-%E0%A4%AA%E0%A4%A2%E0%A4%BC%E0%A4%BE%E0%A4%93-%E0%A4%AC%E0%A4%BE%E0%A4%B2/">View More</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-button-next swiper-navBtn"></div>
+  <div class="swiper-button-prev swiper-navBtn"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<div class="slider11">
+  <div class="slide-track11">
+    <div class="slide11">
+      <img class="track11" src="Image.Index/images (1).jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/images (2).jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/images (3).jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/maxresdefault.jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/image-25.webp" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/mygov-1000000000447177521.jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/mygov-1000000000657381244.jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/maxresdefault (1).jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/images (4).jpg" alt="">
+    </div>
+
+    <div class="slide11">
+      <img class="track11" src="Image.Index/images (1).jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/images (2).jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/images (3).jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/maxresdefault.jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/image-25.webp" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/mygov-1000000000447177521.jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/mygov-1000000000657381244.jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/maxresdefault (1).jpg" alt="">
+    </div>
+    <div class="slide11">
+      <img class="track11" src="Image.Index/images (4).jpg" alt="">
+    </div>
+  </div>
+</div>
+<!-- footer -->
+<footer id="contact1">
+
+  <div class="contact">
+    <h3 class="contact-content">SBM Academy Toll Free: <a class="contact-number" href="18001800404">18001800404</a></h3>
+    <div class="managed">
+      <h3>Website Content Managed by <a class="mail" href=" mailto:SwachhBharatMission@gmail.com"><b>Swachh Bharat Mission</b></a></h3>
+    </div>
+  </div>
+
+  <div class="footerContainer">
+    <div class="SocialIcon">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="footerNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About-us.html">About Us</a></li>
+        <li><a href="Scheme.html">Scheme</a></li>
+        <li><a th:href="user.html">Users</a></li>
+        <li><a href="@{/register.html}">Complain</a></li>
+        <li><a href="#contact1">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footerBottom">
+      <p>Copyright &copy;2022; Designed by <span class="designer">Arish Azmi & Nuzhat Khan</span></p>
+    </div>
+  </div>
+</footer>
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- JavaScript -->
+<script th:src="@{/App.js}"></script>
+</html>

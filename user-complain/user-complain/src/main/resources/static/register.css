@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ddd;
+}
+.class2 {
+    display: flex;
+    position: relative;
+    height: 60px;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.navbar {
+    background: rgb(175 114 51);
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.class1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bars li{
+    list-style: none;
+    display: inline-block;
+}
+
+.bars li a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+.bars li a:hover{
+    color: rgb(193, 147, 101);
+}
+
+.tittle1{
+    font-size: 37px;
+    background-image: url(Image.Index/desktop-wallpaper-wiki-indian-flag-background.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #111;
+
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px 0px;
+}
+.SocialIcon{
+    display: flex;
+    justify-content: center;
+}
+.SocialIcon a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.SocialIcon a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.SocialIcon a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+.contact{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-content{
+    color: white;
+    margin-top: 25px;
+}
+.managed{
+    color: white;
+    margin-top: 20px;
+}
+.contact-number{
+   color: rgb(235, 202, 158);
+}
+.contact-number:hover{
+    color: rgb(198, 150, 150);
+}
+.mail{
+    color: rgb(235, 202, 158);
+}
+.mail:hover{
+    color: rgb(198, 150, 150);
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <title>Registered Users</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="class1">
+            <div class="class2">
+                <img src="Image.Index/Swachh_logo-removebg-preview.png" alt="Error">
+            </div>
+            <div class="tittle1">
+                <h1><a href="index.html">SwachhtaConnect.org</a></h1>
+            </div>
+            <div class="bars">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Scheme.html">Scheme</a></li>
+                    <li><a href="register.html">Complain</a></li>
+                    <li><a th:href="user.html">Users</a></li>
+                    <li><a href="#contact1">Contact</a></li>
+                    <li><a href="About-us.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>Complains</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Issue Location</th>
+                <th>Issue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through the users and display their details -->
+            <tr th:each="user : ${users}">
+                <td th:text="${user.name}">Name</td>
+                <td th:text="${user.email}">Email</td>
+                <td th:text="${user.phone}">Phone</td>
+                <td th:text="${user.address}">Address</td>
+                <td th:text="${user.issue_location}">Issue Location</td>
+                <td th:text="${user.issue}">Issue</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+<footer id="contact1">
+    <div class="contact">
+        <h3 class="contact-content">SBM Academy Toll Free: <a class="contact-number" href="18001800404">18001800404</a></h3>
+        <div class="managed">
+            <h3>Website Content Managed by <a class="mail" href=" mailto:SwachhBharatMission@gmail.com"><b>Swachh Bharat Mission</b></a></h3>
+        </div>
+    </div>
+    <div class="footerContainer">
+        <div class="SocialIcon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About-us.html">About Us</a></li>
+                <li><a href="Scheme.html">Scheme</a></li>
+                <li><a th:href="user.html">Users</a></li>
+                <li><a href="register.html">Complain</a></li>
+                <li><a href="#Contact1">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2022; Designed by <span class="designer">Arish Azmi & Nuzhat Khan</span></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
